@@ -1,11 +1,8 @@
-package dev.danvega.one.controller;
-
-import dev.danvega.one.model.Todo;
-import dev.danvega.one.repository.TodoRepository;
+package dev.danvega.one.todo;
 
 import java.util.List;
 
-public class TodoController {
+class TodoController {
 
     private final TodoRepository todoRepository;
 
@@ -13,7 +10,7 @@ public class TodoController {
         this.todoRepository = todoRepository;
     }
 
-    public List<Todo> findAll() {
+    List<Todo> findAll() {
         return todoRepository.findAll();
     }
 }

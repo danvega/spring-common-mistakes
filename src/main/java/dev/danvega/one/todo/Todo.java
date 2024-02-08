@@ -1,6 +1,6 @@
-package dev.danvega.one.model;
+package dev.danvega.one.todo;
 
-public class Todo {
+class Todo {
 
     private final Integer id;
     private final String title;

@@ -1,6 +1,5 @@
 package dev.danvega.two;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,8 +9,11 @@ import java.util.List;
 @RequestMapping("/api/todos")
 public class TodoController {
 
-    @Autowired
-    private TodoRepository todoRepository;
+    private final TodoRepository todoRepository;
+
+    public TodoController(TodoRepository todoRepository) {
+        this.todoRepository = todoRepository;
+    }
 
     List<String> findAll() {
         return todoRepository.getTodos();

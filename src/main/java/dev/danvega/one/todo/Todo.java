@@ -1,4 +1,4 @@
-package dev.danvega.one.model;
+package dev.danvega.one.todo;
 
 public class Todo {
 

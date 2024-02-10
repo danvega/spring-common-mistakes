@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-class TodoRepository {
+class TodoFourRepository {
 
     private final List<Todo> todos = new ArrayList<>();
 
-    public TodoRepository() {
+    public TodoFourRepository() {
         todos.add(new Todo(1,"Hello World!", false));
     }
 

@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/todos")
-class TodoController {
+@RequestMapping("/api/four/todos")
+class TodoFourController {
 
-    private final TodoRepository todoRepository;
+    private final TodoFourRepository todoRepository;
 
-    public TodoController(TodoRepository todoRepository) {
+    public TodoFourController(TodoFourRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
 

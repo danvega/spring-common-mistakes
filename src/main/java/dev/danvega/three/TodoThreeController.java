@@ -7,11 +7,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/todos")
-class TodoController {
+class TodoThreeController {
 
-    private final TodoService todoService;
+    private final TodoThreeService todoService;
 
-    public TodoController(TodoService todoService) {
+    public TodoThreeController(TodoThreeService todoService) {
         this.todoService = todoService;
     }
 

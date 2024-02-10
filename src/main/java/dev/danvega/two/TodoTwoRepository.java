@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class TodoRepository {
+public class TodoTwoRepository {
 
     private final List<String> todos = List.of("Learn Spring Boot", "Learn Spring MVC", "Learn Spring REST", "Learn to write tests");
 

@@ -2,11 +2,11 @@ package dev.danvega.one.todo;
 
 import java.util.List;
 
-class TodoController {
+class TodoOneController {
 
-    private final TodoRepository todoRepository;
+    private final TodoOneRepository todoRepository;
 
-    public TodoController(TodoRepository todoRepository) {
+    public TodoOneController(TodoOneRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
 

@@ -7,11 +7,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/todos")
-public class TodoController {
+public class TodoTwoController {
 
-    private final TodoRepository todoRepository;
+    private final TodoTwoRepository todoRepository;
 
-    public TodoController(TodoRepository todoRepository) {
+    public TodoTwoController(TodoTwoRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
 

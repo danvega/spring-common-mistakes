@@ -14,23 +14,23 @@ class TodoController {
         this.todoRepository = todoRepository;
     }
 
-    @GetMapping("/getAllTodos")
+    @GetMapping("/")
     List<Todo> getAll() {
         return todoRepository.findAll();
     }
 
-    @GetMapping("/getTodoById/{id}")
+    @GetMapping("/{id}")
     Todo getTodoById(@PathVariable Integer id) {
         return todoRepository.findById(id);
     }
 
-    @PostMapping("/addTodo")
+    @PostMapping("/")
     Todo addTodo(@RequestBody Todo todo) {
         // Add the todo to the repository
         return todo;
     }
 
-    @PutMapping("/updateTodo")
+    @PutMapping("/{id}")
     Todo updateTodo(@RequestBody Todo todo) {
         // Update the todo in the repository
         return todo;

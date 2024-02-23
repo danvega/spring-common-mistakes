@@ -36,7 +36,7 @@ class TodoController {
         return todo;
     }
 
-    @DeleteMapping("/deleteTodo/{id}")
+    @DeleteMapping("/{id}")
     void deleteTodoById(@PathVariable Integer id) {
         // Delete the todo from the repository
     }
